@@ -9,7 +9,6 @@ class Player(object):
         return self._lives
 
     def _set_lives(self, lives):
-        print("aa raha hai lives", lives)
         if lives >= 0:
             self._lives = lives
         else:
@@ -20,7 +19,6 @@ class Player(object):
         return self._level
 
     def _set_level(self, level):
-        print("aa raha hai", level)
         if level >= 1:
             self.score += (level - self._level) * 1000
             self._level = level

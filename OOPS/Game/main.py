@@ -1,13 +1,12 @@
-from enemy import Enemy, Troll, Vampyre
+from enemy import Enemy, Troll, Vampyre, VampyreKing
 from player import Player
 
 alok = Player("Alok")
 # monster = Troll(name="Ogre")
-monster = Vampyre("Vlad")
+monster = VampyreKing()
 
 monster.take_damage(4)
 monster.grunt()
 
-while monster.lives > 0:
-    if not monster.dodges():
-        monster.take_damage(3)
+while monster._lives > 0:
+    monster.take_damage(12)
